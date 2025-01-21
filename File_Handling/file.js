@@ -41,3 +41,12 @@ fileSystem.unlinkSync("./copy.txt");
 
 //Status of the file
 console.log(fileSystem.statSync("./test.txt"))
+
+
+
+
+// Blocking and Non Blocking requests
+
+// the requests that use sync at last are the blocking requests means they work synchronously and they will let the next requests only execute when they finished up executing.
+
+//Contrary to the Blocking requests, the requestes that dont use sync dont block the code, they use the concept of event loop to non block the requests
